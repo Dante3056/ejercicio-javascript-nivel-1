@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript nivel 1 ejercicio 6</title>
+</head>
+<body>
+    <h2 style="text-align:center;">Javascript nivel 1 ejercicio 6</h2>
+
+
+    <h2>Reemplazando color de coche</h2>
+    <script>
+     var colorCoche=("azul");
+
+        document.write("tengo un coche de color verde <br/>");
+        document.write("tengo un coche de color " + colorCoche + "<br/>");
+    </script>
+
+   
+
+    <h2>Reemplazando vocal "o" por vocal "u"</h2>    
+    <script>
+    
+ /*para este ejercicio usé de ejemplo el capítulo de strings methods de W3schools 
+ y opte por osar POO con el metodo replace, podría haber usado el mismo método para los dos casos
+ pero me pareció bien hacerlo asi.*/
+
+
+    var str="tengo un coche de color verde";
+    var text=str.replace(/o/g,"u");
+
+    document.write(str + "<br/>");
+    document.write(text);
+
+    
+    </script>
+    
+</body>
+</html>

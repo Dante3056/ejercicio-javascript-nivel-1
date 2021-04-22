@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript nivel 1 ejercicio 8</title>
+  </head>
+  <body>
+    <script>
+      do {
+        var operador = prompt(
+          "introduce la operación que deseas realizar suma/resta/multiplica"
+        ).toLowerCase();
+        var num1 = parseInt(prompt("introduce el primer número"));
+        var num2 = parseInt(prompt("introduce el segundo número"));
+
+        function calculadora(operador, num1, num2) {
+          if (operador == "suma") {
+            alert("el resultado es " + (num1 + num2));
+          } 
+          else if (operador == "resta") {
+            alert("el resultado es " + (num1 - num2));
+          }
+          else if (operador == "multiplica") {
+            alert("el resultado es " + num1 * num2);
+          } else {
+            alert(
+              "ERROR la operación que intentas realizar no es posible, introduce una operación válida: suma/resta/multiplica");
+          }
+        }
+        var resultado = calculadora(operador, num1, num2);
+        var continuar = prompt("¿Deseas hacer otra operación? si/no");
+      } while (continuar == "si");
+
+      alert("Muchas gracias!;) ");
+    </script>
+  </body>
+</html>
